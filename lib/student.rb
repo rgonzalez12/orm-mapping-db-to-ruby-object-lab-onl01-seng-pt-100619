@@ -60,4 +60,6 @@ class Student
   
   def self.all_students_in_grade_9
     sql = "SELECT * FROM students WHERE grade=9;"
+    DB[:conn].execute(sql)
+  end
 end
